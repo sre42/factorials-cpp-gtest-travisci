@@ -4,6 +4,7 @@ sudo: false
 
 compiler:
     - gcc
+    - clang
 
 
 before_script:
@@ -15,6 +16,7 @@ script: make && ./factorial_tests/basic_tests/runBasicFactorialTests
 
 os:
     - linux
+    - osx
 
 env:
   global:
