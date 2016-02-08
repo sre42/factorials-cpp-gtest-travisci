@@ -3,19 +3,19 @@ language: cpp
 sudo: required
 
 compiler:
-	- gcc
-	- clang
+    - gcc
+    - clang
 
 before_script:
-	- mkdir build
-	- cd build
-	- cmake ..
+    - mkdir build
+    - cd build
+    - cmake ..
 
 script: make && ./factorial_tests/basic_tests/runBasicFactorialTests
 
 os:
-	- linux
-	- osx
+    - linux
+    - osx
 
 env:
   global:
