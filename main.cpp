@@ -6,8 +6,9 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-    int n = 4;
-    cout << "factorial(" << n << "): "
-    << factorial(n) << endl;
+    int n;
+    cout << "Please Enter the factorial you wish to find:";
+    cin >> n;
+    cout << "factorial(" << n << "): " << factorial(n) << endl;
     return 0;
 }
