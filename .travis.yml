@@ -1,8 +1,22 @@
 language: cpp
-sudo: 
+
+sudo: required
+
+compiler:
+	- gcc
+	- clang
+
+before_script:
+	- mkdir build
+	- cd build
+	- cmake ..
+
+script: make && ./factorial_tests/basic_tests/runBasicFactorialTests
+
 os:
-- linux
-- osx
+	- linux
+	- osx
+
 env:
   global:
   - LANG="en_US.UTF-8"
