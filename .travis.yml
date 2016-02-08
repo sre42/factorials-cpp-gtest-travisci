@@ -7,9 +7,7 @@ compiler:
 
 
 before_script:
-    - mkdir build
-    - cd build
-    - cmake ..
+    - cmake .
 
 script: make && ./factorial_tests/basic_tests/runBasicFactorialTests
 
