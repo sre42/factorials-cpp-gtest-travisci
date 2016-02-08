@@ -2,7 +2,7 @@
 // Created by Omar Shaikh on 2/8/16.
 //
 //factorial.cpp
-#include "factorial.H"
+#include "factorial.h"
 
 int factorial(int n) {
     int result = 1;
